@@ -1,7 +1,5 @@
 # Credit Card Fraud Detection
 
-**Status: executed, results reviewed.** This repo stays private for now, until it has been fully reviewed and Karen is confident presenting it. It will be made public once ready.
-
 **Dataset:** [Credit Card Fraud Detection](https://www.kaggle.com/mlg-ulb/creditcardfraud), Machine Learning Group at ULB (Universite Libre de Bruxelles), 284,807 transactions, 492 fraud cases (0.17%)
 **Tools:** Python, Pandas, scikit-learn (LogisticRegression, RandomForestClassifier, StratifiedKFold), imbalanced-learn (SMOTE)
 **Goal:** Detect fraudulent credit card transactions in a heavily imbalanced dataset.
