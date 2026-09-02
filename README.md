@@ -16,6 +16,7 @@ credit-card-fraud-detection/
 │   └── creditcard.csv                          # Not tracked in git, see Data section below
 ├── notebooks/
 │   └── credit_card_fraud_detection.ipynb       # Full classification workflow
+├── environment.yml                             # Conda environment for this project
 └── README.md
 ```
 
@@ -33,13 +34,16 @@ The features `V1` to `V28` are already PCA-transformed and anonymized by the ori
 
 ---
 
-## Dependencies
+## Environment
 
-Besides the usual pandas/scikit-learn/matplotlib/seaborn stack, this notebook needs `imbalanced-learn` for the SMOTE step:
+This project uses its own conda environment (`environment.yml`), separate from other projects in this portfolio, to avoid dependency conflicts and keep the project reproducible for anyone cloning the repo.
 
 ```
-pip install imbalanced-learn
+conda env create -f environment.yml
+conda activate credit-card-fraud-detection
 ```
+
+The environment includes pandas, scikit-learn, matplotlib, seaborn, and `imbalanced-learn` (used for the SMOTE step).
 
 ---
 
